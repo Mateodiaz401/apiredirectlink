@@ -2,10 +2,10 @@
   "name": "apinodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "./ssrc/server.js",
+  "main": "./server.js",
   "scripts": {
-    "dev": "nodemon ./src/server.js",
-    "start": "node ./src/server.js"
+    "dev": "nodemon ./server.js",
+    "start": "node ./server.js"
   },
   "keywords": [],
   "author": "Mateo Díaz <mateodiaz401@gmail.com>",
