@@ -66,7 +66,7 @@ const bodyLoginValidator = [
         .trim()
         .isEmail()
         .normalizeEmail({
-            gmail_remove_dots: true,
+            gmail_remove_dots: false,
             outlookdotcom_remove_dots: false,
             yahoo_remove_dots: false,
             icloud_remove_dots: false,
