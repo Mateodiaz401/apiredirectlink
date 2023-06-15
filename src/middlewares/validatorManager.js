@@ -41,12 +41,14 @@ const bodyLinkValidator = [
 const bodyRegisterValidator = [
     body("email", "Formato de email incorrecto")
         .trim()
+        .isEmail()
         .normalizeEmail({
-            all_remove_dots: false,
-            all_lowercase: false,
-        })
-        //.customSanitizer((value) => validator.normalizeEmail(value, { all_lowercase: false, gmail_remove_dots: false }))
-        .isEmail(),
+            gmail_remove_dots: false,
+            outlookdotcom_remove_dots: false,
+            yahoo_remove_dots: false,
+            icloud_remove_dots: false,
+            all_lowercase: true
+        }),
     body("password", "Mínimo 6 carácteres").trim().isLength({ min: 6 }),
     body("password", "Formato de password incorrecta").custom(
         (value, { req }) => {
@@ -64,8 +66,11 @@ const bodyLoginValidator = [
         .trim()
         .isEmail()
         .normalizeEmail({
-            gmail_remove_dots: false,
-            all_lowercase: false
+            gmail_remove_dots: true,
+            outlookdotcom_remove_dots: false,
+            yahoo_remove_dots: false,
+            icloud_remove_dots: false,
+            all_lowercase: true
         }),
     body("password", "Mínimo 6 carácteres").trim().isLength({ min: 6 }),
     validationResultExpress,
