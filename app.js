@@ -33,10 +33,4 @@ app.use("/api/v1/links", linkRouter);
 
 // app.use(express.static("public"))
 
-// Middleware de manejo de errores
-/*app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).json({ error: `Internal Server Error ${err}` });
-});
-*/
 module.exports = app;
