@@ -2,10 +2,10 @@
   "name": "apinodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "./index.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./index.js",
-    "start": "node ./index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "Mateo Díaz <mateodiaz401@gmail.com>",
