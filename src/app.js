@@ -8,7 +8,7 @@ const linkRouter = require('./routes/link.route');
 const redirectRouter = require('./routes/redirect.route');
 
 const app = express();
-const whiteList = [process.env.ORIGIN2]
+const whiteList = [process.env.ORIGIN1, process.env.ORIGIN2]
 
 app.use(
     cors({
