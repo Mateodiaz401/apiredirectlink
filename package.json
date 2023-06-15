@@ -1,0 +1,28 @@
+{
+  "name": "apinodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./ssrc/server.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Mateo Díaz <mateodiaz401@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "nanoid": "^3.3.6",
+    "shortid": "^2.2.16",
+    "validator": "^13.9.0"
+  }
+}
